@@ -1,0 +1,33 @@
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__container {
+  position: relative;
+  z-index: 100;
+  background-color: #333;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.modal__img {
+  object-fit: contain;
+  height: 90vh;
+}
+
+.modal-close-icon {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+

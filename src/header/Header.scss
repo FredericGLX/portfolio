@@ -1,0 +1,15 @@
+@import '../index.scss';
+
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 24px 0;
+  color: $mainColor;
+
+  .header__tab {
+    list-style: none;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+}

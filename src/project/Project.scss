@@ -1,0 +1,99 @@
+@import '../index.scss';
+
+.projects__container {
+  margin-bottom: 60px;
+  h1 {
+    color: $mainColor;
+  }
+
+  .projects {
+    margin: 0 -50px;
+  }
+}
+
+.project__container {
+  max-width: 300px;
+}
+
+.project__title {
+  color: $mainColor;
+}
+
+.project__img { 
+  cursor: pointer;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: 4px;
+  transition: all .2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+}
+
+
+// Swiper
+.swiper-wrapper {
+  margin: 1rem 0;
+}
+
+.swiper-slide {
+  transition: ease 0.3s all;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 30% !important;
+  margin: 0 -5px;
+  transition: all .5s;
+  --swiper-navigation-color: #211B12;
+}
+
+.swiper-button-disabled {
+  --swiper-navigation-color: transparent;
+}
+
+// Elements below the project image: descriptions, badges, icons...
+.project__description {
+  text-align: justify;
+}
+
+.project__badge {
+  background-color: #fff;
+  margin-right: 6px;
+  border: solid 1px $mainColor;
+  padding: 5px 8px 4px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.project__icons, a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $mainBlack;
+  .project__icon {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 0 6px;
+    line-height: 2px;
+    gap: 4px;
+    border-bottom: solid 2px $mainColor;
+
+  }
+  .icon__code, .icon__demo {
+    margin-right: 3px;
+  }
+  .icon__demo {
+    height: 20px;
+  }
+  }
+
+.project__badges {
+  line-height: 1.8;
+  }
