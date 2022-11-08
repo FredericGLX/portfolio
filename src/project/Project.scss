@@ -1,13 +1,15 @@
 @import '../index.scss';
 
 .projects__container {
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto;
+  width: 80%;
+
   h1 {
     color: $mainColor;
   }
 
   .projects {
-    margin: 0 -50px;
+    // margin: 0 -50px;
   }
 }
 

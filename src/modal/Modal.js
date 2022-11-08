@@ -1,6 +1,7 @@
 import './Modal.scss';
 import ReactDom from 'react-dom';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Modal = ({ open, children, onClose, domNodeRef }) => {
   if (!open) return null;
@@ -8,7 +9,16 @@ const Modal = ({ open, children, onClose, domNodeRef }) => {
   return ReactDom.createPortal(
     <>
       <div className="modal__overlay">
-        <div className="modal__container" ref={domNodeRef}>
+        <motion.div
+          key={children.props.alt}
+          ref={domNodeRef}
+          initial={{ y: '100vh', opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{ duration: 0.4 }}
+        >
           <IoIosCloseCircleOutline
             className="modal-close-icon"
             size="2.6rem"
@@ -17,8 +27,8 @@ const Modal = ({ open, children, onClose, domNodeRef }) => {
             style={{ stroke: '#000', strokeWidth: '4' }}
             onClick={onClose}
           />
-          <div>{children}</div>
-        </div>
+          <>{children}</>
+        </motion.div>
       </div>
     </>,
     document.getElementById('portal')

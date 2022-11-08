@@ -16,8 +16,8 @@ function Projects() {
       <div className="projects">
         <Swiper
           modules={[Navigation]}
-          spaceBetween={-50}
-          slidesPerView={2}
+          spaceBetween={0}
+          slidesPerView={3}
           navigation
         >
           <SwiperSlide>
@@ -28,6 +28,9 @@ function Projects() {
           </SwiperSlide>
           <SwiperSlide>
             <PokeApp />
+          </SwiperSlide>
+          <SwiperSlide>
+            <NetflixProject />
           </SwiperSlide>
         </Swiper>
       </div>

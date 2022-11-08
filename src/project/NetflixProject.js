@@ -18,7 +18,7 @@ function NetflixProject() {
       picture={picture}
       title={'Netflix Clone'}
       technologies={technologies}
-      description={`I wanted to challenge myself by coding a clone of a popular web app. While browsing on the internet looking for ideas I stumbled upon a very realistic clone which convinced me to give it a try.
+      description={`I wanted to challenge myself by coding a clone of a popular web app. While browsing on the internet looking for ideas I stumbled upon a very realistic clone which convinced me to give it a try. Guest ID and password are on the GitHub repo if you wish to log in.
       `}
       codeLink={'https://github.com/FredericGLX/Netflix-clone'}
       demoLink={'https://fredflix.netlify.app/'}

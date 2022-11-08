@@ -5,21 +5,25 @@ import gitHubIcon from '../img/icons/github.svg';
 
 function About() {
   return (
-    <div className="about" name="about">
+    <div className="about__container" name="about">
       <div className="about__top">
-        <img className="about__picture" src={picture} alt="profile picture" />
-        <div className="about__right">
-          <h3>Nice to meet you</h3>
-          <h2 className="about__main">I'm Frederic Guilloux</h2>
+        {/* <img className="about__picture" src={picture} alt="profile picture" /> */}
+        <div>
+          <h3 className="about__small-title">Nice to meet you</h3>
+          <h1 className="about__main-title">
+            I'm <span>F</span>rederic
+          </h1>
           <p>
-            Currently working in account management, I started coding on my free
-            time two years ago.
+            I am currently working in account management for an e-commerce
+            website and started this coding journey on my free time two years
+            ago.
           </p>
-          <p>Little quote in color</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            condimentum risus in arcu pretium laoreet. Fusce sodales malesuada
-            metus, in vehicula nisi sodales eu.{' '}
+            Initially I just wanted to know how websites are built, but what was
+            initially a hobby turned into a passion. I kept learning on a daily
+            basis and really enjoyed being able to track my progress. I mostly
+            specialized in Front-End development as I really like JavaScript and
+            toying around with it in the browser.{' '}
           </p>
         </div>
       </div>
