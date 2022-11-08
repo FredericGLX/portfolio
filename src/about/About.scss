@@ -9,6 +9,16 @@
 .about__top {
 display: flex;
 font-weight: 700;
+
+.about__p1 {
+ animation: fadeP1 1s;
+}
+
+.about__p2 {
+  animation: fadeP2 2s;
+ }
+
+
 }
 .about__small-title {
   margin-bottom: -12px;
@@ -33,19 +43,32 @@ font-weight: 700;
   }
 }
 
-.about__picture {
-  border-radius: 20px;
-  max-width: 250px;
-  height: 100%;
-  width: 100%;
-  margin-right: 12px;
-}
-
 .contact__icons {
   margin-top: 4px;
   display: flex;
   img {
     max-width: 32px;
     max-height: 32px;
+  }
+}
+
+// Animation
+@keyframes fadeP1 {
+  0% {
+    opacity: 0;
+    // transform: translateY(-2vh);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeP2 {
+  0% {
+    opacity: 0;
+    // transform: translateY(2vh);
+  }
+  100% {
+    opacity: 1;
   }
 }

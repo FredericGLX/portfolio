@@ -1,5 +1,4 @@
 import './About.scss';
-import picture from '../img/profile4.jpg';
 import linkedInIcon from '../img/icons/linkedin.svg';
 import gitHubIcon from '../img/icons/github.svg';
 
@@ -7,18 +6,17 @@ function About() {
   return (
     <div className="about__container" name="about">
       <div className="about__top">
-        {/* <img className="about__picture" src={picture} alt="profile picture" /> */}
         <div>
           <h3 className="about__small-title">Nice to meet you</h3>
           <h1 className="about__main-title">
             I'm <span>F</span>rederic
           </h1>
-          <p>
+          <p className="about__p1">
             I am currently working in account management for an e-commerce
             website and started this coding journey on my free time two years
             ago.
           </p>
-          <p>
+          <p className="about__p2">
             Initially I just wanted to know how websites are built, but what was
             initially a hobby turned into a passion. I kept learning on a daily
             basis and really enjoyed being able to track my progress. I mostly
