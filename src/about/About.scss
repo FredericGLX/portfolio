@@ -11,11 +11,11 @@ display: flex;
 font-weight: 700;
 
 .about__p1 {
- animation: fadeP1 1s;
+//  animation: fadeP1 1s;
 }
 
 .about__p2 {
-  animation: fadeP2 2s;
+  // animation: fadeP2 2s;
  }
 
 
@@ -27,7 +27,13 @@ font-weight: 700;
 }
 .about__main-title {
     font-size: 44px;
-    span {
+    margin: -0.8rem 0;
+
+    p, span {
+      display: inline-block;
+    }
+
+    .about__colored-letter {
       color: $mainColor;
     }
 }

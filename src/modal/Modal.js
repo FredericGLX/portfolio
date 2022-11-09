@@ -1,7 +1,7 @@
 import './Modal.scss';
 import ReactDom from 'react-dom';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Modal = ({ open, children, onClose, domNodeRef }) => {
   if (!open) return null;
