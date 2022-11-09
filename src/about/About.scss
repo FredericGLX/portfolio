@@ -9,17 +9,8 @@
 .about__top {
 display: flex;
 font-weight: 700;
-
-.about__p1 {
-//  animation: fadeP1 1s;
 }
 
-.about__p2 {
-  // animation: fadeP2 2s;
- }
-
-
-}
 .about__small-title {
   margin-bottom: -12px;
   margin-left: 5%;
@@ -46,6 +37,11 @@ font-weight: 700;
     border: solid 1px $mainColor;
     padding: 5px 8px 4px 8px;
     border-radius: 4px;
+    transition: all .2s;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 2px 3px #ccc;
+    }
   }
 }
 
@@ -55,26 +51,5 @@ font-weight: 700;
   img {
     max-width: 32px;
     max-height: 32px;
-  }
-}
-
-// Animation
-@keyframes fadeP1 {
-  0% {
-    opacity: 0;
-    // transform: translateY(-2vh);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeP2 {
-  0% {
-    opacity: 0;
-    // transform: translateY(2vh);
-  }
-  100% {
-    opacity: 1;
   }
 }
