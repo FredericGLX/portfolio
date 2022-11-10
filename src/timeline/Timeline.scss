@@ -1,0 +1,59 @@
+@import '../index.scss';
+
+
+.timeline__container {
+  margin: 60px auto;
+  width: 40%;
+  
+  h1 {
+    color: $mainColor;
+  }
+
+  .timeline__block {
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 1px;
+  border-left: solid 1px #ccc;
+    div, span, h3 {
+      margin-right: 1rem;
+    }
+  }
+
+  .timeline__title {
+    display: flex;
+    align-items: center;
+  }
+
+  .timeline__bullet {
+    position: absolute;
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    left: -5.5px;
+  }
+
+  .timeline__when {
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+  }
+
+  .timeline__role {
+  }
+
+  .timeline__how-long {
+    color: #999;
+  }
+
+  .timeline__paragraph {
+    margin-top: 0; 
+    color: #333;
+    line-height: 1.5;
+  }
+
+
+
+}
