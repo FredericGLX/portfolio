@@ -1,5 +1,9 @@
 @import '../index.scss';
 
+:root {
+  --swiper-navigation-color: #211B12;
+}
+
 .projects__container {
   margin: 0 auto 60px auto;
   width: 80%;
@@ -48,7 +52,6 @@
   top: 30% !important;
   margin: 0 -5px;
   transition: all .5s;
-  --swiper-navigation-color: #211B12;
 }
 
 .swiper-button-disabled {
@@ -95,18 +98,15 @@
   line-height: 1.8;
   }
 
-.project__dark-theme {
+  .projects__dark-theme {
+  --swiper-navigation-color: #BF7506;
+
   .project__badge {
-  background-color: $darkThemeBackground;
-  color: #fff;
-  }
-
-  .project__icon > a {
+    background-color: $darkThemeBackground;
     color: #fff;
+    }
+  
+    .project__icon > a {
+      color: #fff;
+    }
   }
-
-  // .swiper-button-next,
-  // .swiper-button-prev {
-  //   --swiper-navigation-color: #fff;
-  // }
-}

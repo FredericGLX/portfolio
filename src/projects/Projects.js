@@ -9,9 +9,14 @@ import NetflixProject from '../project/NetflixProject';
 import TMSProject from '../project/TMSProject';
 import PokeApp from '../project/PokeApp';
 
-function Projects() {
+function Projects({ darkTheme }) {
   return (
-    <div className="projects__container" name="projects">
+    <div
+      className={`projects__container ${
+        darkTheme ? 'projects__dark-theme' : ''
+      }`}
+      name="projects"
+    >
       <h1>Latest projects</h1>
       <div className="projects">
         <Swiper

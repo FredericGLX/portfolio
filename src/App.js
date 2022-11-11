@@ -16,7 +16,7 @@ function App() {
     >
       <Header handleClick={handleClick} darkTheme={darkTheme} />
       <About darkTheme={darkTheme} />
-      <Projects />
+      <Projects darkTheme={darkTheme} />
       <Timeline darkTheme={darkTheme} />
       <Contact darkTheme={darkTheme} />
     </div>
