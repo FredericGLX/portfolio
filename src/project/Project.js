@@ -1,9 +1,12 @@
 import './Project.scss';
 import CodeIcon from '../icons/icon_code.svg';
 import DemoIcon from '../icons/icon_demo.svg';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import useClickOutside from '../hooks/useClickOutside';
 import Modal from '../modal/Modal';
+import { ThemeContext } from '../context/ThemeContext';
+import { BiCode } from 'react-icons/bi';
+import { BiCheck } from 'react-icons/bi';
 
 function Project({
   picture,
@@ -14,6 +17,7 @@ function Project({
   demoLink,
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const { darkTheme } = useContext(ThemeContext);
 
   let domNode = useClickOutside(() => {
     setIsOpen(false);
@@ -21,7 +25,11 @@ function Project({
 
   return (
     <>
-      <div className="project__container">
+      <div
+        className={`project__container ${
+          darkTheme ? 'project__dark-theme' : ''
+        }`}
+      >
         <img
           className="project__img"
           src={picture}
@@ -34,7 +42,7 @@ function Project({
         <div className="project__icons">
           <div className="project__icon">
             <a href={codeLink}>
-              <img src={CodeIcon} className="icon__code" />
+              <BiCode className="icon__code" size={22} />
               <p>Code</p>
             </a>
           </div>
@@ -43,7 +51,8 @@ function Project({
           ) : (
             <div className="project__icon">
               <a href={demoLink}>
-                <img src={DemoIcon} className="icon__demo" /> <p>Demo</p>
+                <BiCheck className="icon__code" size={22} />
+                <p>Demo</p>
               </a>
             </div>
           )}

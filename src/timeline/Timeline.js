@@ -1,8 +1,12 @@
 import './Timeline.scss';
 
-function Timeline() {
+function Timeline({ darkTheme }) {
   return (
-    <div className="timeline__container">
+    <div
+      className={`timeline__container ${
+        darkTheme ? 'timeline__dark-theme' : ''
+      }`}
+    >
       <h1>Timeline</h1>
       <div className="timeline__block">
         <div className="timeline__title">

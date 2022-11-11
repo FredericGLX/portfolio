@@ -2,7 +2,7 @@ import './Contact.scss';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-function Contact() {
+function Contact({ darkTheme }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,13 +27,12 @@ function Contact() {
   };
 
   return (
-    <div className="contact__container" name="contact">
-      {/* <div className="contact__left">
-        <h2>Connect with me:</h2>
-        <p>Interested in working together? {<br></br>} Let's have a chat</p>
-      </div> */}
+    <div
+      className={`contact__container ${darkTheme ? 'contact__dark-theme' : ''}`}
+      name="contact"
+    >
       <div className="contact__main">
-        <p className="contact__right__title">
+        <p className="contact__main-title">
           Contact me, let's make magic together
         </p>
         <form className="contact__form" ref={form} onSubmit={sendEmail}>

@@ -1,11 +1,25 @@
 @import '../index.scss';
 
 .app__header {
-  margin: 24px auto 36px auto;
+  padding: 24px 0 36px 0;
+
+  margin: auto;
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: right;
+  .header__switch-theme {
+    cursor: pointer;
+    border: none;
+    padding: 6px;
+    border-radius: 100px;
+    background-color: rgb(196 181 253);
+    position: fixed;
+    left: 5%;
+  }
+  .header__tabs {
+    display: flex;
+  }
 
   .header__tab {
     position: relative;

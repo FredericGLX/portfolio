@@ -1,16 +1,15 @@
 @import '../index.scss';
 
 .contact__container {
-  // display: flex;
-  // justify-content: center;
-  margin: 0 auto 60px auto;
+  margin: 0 auto auto auto;
+  padding-bottom: 15vh;
   width: 40%;
 
   h2 {
     margin-bottom: -4px;
   }
 
-  .contact__right__title {
+  .contact__main-title {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 6px;
@@ -38,16 +37,14 @@
     outline: none;
     }
   }
-  input, textarea {
-    padding: 10px;
-  }
+
   textarea {
     font-family: inherit;
     font-size: 13px;
   }
   label {
     position: absolute;
-    padding: 18px 10px 0 10px;
+    padding: 16px 10px 0 10px;
     font-size: 16px;
     left: 0;
     color: #999;
@@ -80,7 +77,21 @@
   font-weight: 500;
 
   &:hover {
-    // background-color: $mainColor;
     box-shadow: 0px 1px 4px #000;
+  }
+  }
+
+  .contact__dark-theme {
+    .contact__main-title {
+      color: #fff;
+    }
+    input, textarea {
+      background-color: $darkThemeBackground;
+      border-color: #fff;
+    }
+    input:focus ~ label, input:valid ~ label, 
+  textarea:focus ~ label, textarea:valid ~ label{
+    background-color: $darkThemeBackground;
+    color: #fff;
   }
   }

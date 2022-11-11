@@ -40,10 +40,6 @@
     padding: 0.25rem 0.5rem;
     border-radius: 0.375rem;
   }
-
-  .timeline__role {
-  }
-
   .timeline__how-long {
     color: #999;
   }
@@ -54,6 +50,22 @@
     line-height: 1.5;
   }
 
+}
 
+.timeline__dark-theme {
+  .timeline__when {
+    background-color: #fff;
+    color: $mainBlack;
+  }
+  .timeline__role {
+  color: #fff;
+  }
 
+  .timeline__how-long {
+    color: #555;
+  }
+
+  .timeline__paragraph {
+    color: #aaa;
+  }
 }

@@ -53,3 +53,19 @@ font-weight: 700;
     max-height: 32px;
   }
 }
+
+.about__dark-theme {
+ p {
+    color: #fff;
+  }
+  .about__p1, .about__p2 {
+    color: $darkThemeText;
+  }
+  .about__badge {
+    background-color: $darkThemeBackground;
+    color: #fff;
+    &:hover {
+      box-shadow: 0 2px 3px #222;
+    }
+  }
+}

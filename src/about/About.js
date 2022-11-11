@@ -4,9 +4,12 @@ import gitHubIcon from '../img/icons/github.svg';
 import { motion } from 'framer-motion';
 import motions from '../helper/motions';
 
-function About() {
+function About({ darkTheme }) {
   return (
-    <div className="about__container" name="about">
+    <div
+      className={`about__container ${darkTheme ? 'about__dark-theme' : ''}`}
+      name="about"
+    >
       <div className="about__top">
         <div>
           <motion.h3
@@ -19,6 +22,7 @@ function About() {
           </motion.h3>
           <h1 className="about__main-title">
             <motion.p
+              className="about__name__im"
               variants={motions.fadein}
               initial="initial"
               animate="animate"

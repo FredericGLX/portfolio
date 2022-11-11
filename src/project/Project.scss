@@ -7,10 +7,6 @@
   h1 {
     color: $mainColor;
   }
-
-  .projects {
-    // margin: 0 -50px;
-  }
 }
 
 .project__container {
@@ -86,7 +82,6 @@
     line-height: 2px;
     gap: 4px;
     border-bottom: solid 2px $mainColor;
-
   }
   .icon__code, .icon__demo {
     margin-right: 3px;
@@ -99,3 +94,19 @@
 .project__badges {
   line-height: 1.8;
   }
+
+.project__dark-theme {
+  .project__badge {
+  background-color: $darkThemeBackground;
+  color: #fff;
+  }
+
+  .project__icon > a {
+    color: #fff;
+  }
+
+  // .swiper-button-next,
+  // .swiper-button-prev {
+  //   --swiper-navigation-color: #fff;
+  // }
+}
