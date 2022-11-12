@@ -5,12 +5,7 @@ $darkThemeText: #ccc;
 $darkThemeBackground: #161515;
 
 .app {
-  
-  // width: 80%;
-  // overflow: visible !important;
-  // @include respond(medium) {
-  //   width: 90%;
-  // }
+  transition: all .8s;
 }
 
 .app__light-theme {
