@@ -1,5 +1,8 @@
-@import './index.scss';
-
+// Colors
+$mainColor: #BF7506;
+$mainBlack: #211B12;
+$darkThemeText: #ccc;
+$darkThemeBackground: #161515;
 
 .app {
   
@@ -8,14 +11,16 @@
   // @include respond(medium) {
   //   width: 90%;
   // }
-  }
+}
 
-  .app__light-theme {
-    background-color: #fff;
-    color: $mainBlack;
+.app__light-theme {
+  background-color: #fff;
+  color: $mainBlack;
+}
+.app__dark-theme {
+  background-color: $darkThemeBackground;
+  color: #aaa;
+  $mainColor: blue;
 
-    }
-  .app__dark-theme {
-    background-color: $darkThemeBackground;
-    color: #aaa;
-    }
+}
+

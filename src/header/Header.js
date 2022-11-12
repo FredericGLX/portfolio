@@ -1,12 +1,22 @@
 import './Header.scss';
 import { Link } from 'react-scroll';
-import { BsMoon, BsSun } from 'react-icons/bs';
+import { BsMoon, BsSun, BsMoonStars } from 'react-icons/bs';
+import { FaRegMoon } from 'react-icons/fa';
 
 function Header({ handleClick, darkTheme }) {
   return (
     <header className="app__header">
-      <button className="header__switch-theme" onClick={handleClick}>
-        {!darkTheme ? <BsMoon size={'1.2rem'} /> : <BsSun size={'1.2rem'} />}
+      <button
+        className={`header__switch-theme ${
+          darkTheme ? 'header__dark-theme' : ''
+        }`}
+        onClick={handleClick}
+      >
+        {!darkTheme ? (
+          <BsMoonStars size={'1.2rem'} />
+        ) : (
+          <BsSun size={'1.2rem'} />
+        )}
       </button>
 
       <div className="header__tabs">
