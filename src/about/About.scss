@@ -46,11 +46,11 @@ font-weight: 700;
 }
 
 .contact__icons {
-  margin-top: 4px;
   display: flex;
-  img {
-    max-width: 32px;
-    max-height: 32px;
+  .contact__icon {
+  margin: 10px 6px 0 0;
+  color: #333;
+  border-radius: 4px;
   }
 }
 
@@ -68,4 +68,7 @@ font-weight: 700;
       box-shadow: 0 2px 3px #222;
     }
   }
+  .contact__icon {
+    color: $darkThemeText;
+    }
 }

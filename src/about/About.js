@@ -1,8 +1,7 @@
 import './About.scss';
-import linkedInIcon from '../img/icons/linkedin.svg';
-import gitHubIcon from '../img/icons/github.svg';
 import { motion } from 'framer-motion';
 import motions from '../helper/motions';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 function About({ darkTheme }) {
   return (
@@ -126,10 +125,10 @@ function About({ darkTheme }) {
       </div>
       <div className="contact__icons">
         <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-guilloux85/">
-          <img src={linkedInIcon} className="contact__icon" />
+          <BsLinkedin className="contact__icon" size={'1.4rem'} />
         </a>
         <a href="https://github.com/FredericGLX">
-          <img src={gitHubIcon} className="contact__icon" />
+          <BsGithub className="contact__icon" size={'1.4rem'} />
         </a>
       </div>
     </div>

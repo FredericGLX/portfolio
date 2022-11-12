@@ -1,6 +1,4 @@
 import './Project.scss';
-import CodeIcon from '../icons/icon_code.svg';
-import DemoIcon from '../icons/icon_demo.svg';
 import { useState, useContext } from 'react';
 import useClickOutside from '../hooks/useClickOutside';
 import Modal from '../modal/Modal';
