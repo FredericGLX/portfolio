@@ -6,6 +6,7 @@ function Timeline({ darkTheme }) {
       className={`timeline__container ${
         darkTheme ? 'timeline__dark-theme' : ''
       }`}
+      name="timeline"
     >
       <h1>Timeline</h1>
       <div className="timeline__block">

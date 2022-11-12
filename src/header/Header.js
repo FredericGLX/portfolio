@@ -39,7 +39,16 @@ function Header({ handleClick, darkTheme }) {
         >
           Projects
         </Link>
-
+        <Link
+          to="timeline"
+          spy={true}
+          smooth={true}
+          offset={-3}
+          duration={500}
+          className="header__tab"
+        >
+          Timeline
+        </Link>
         <Link
           to="contact"
           spy={true}
