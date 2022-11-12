@@ -1,7 +1,6 @@
 import './Header.scss';
 import { Link } from 'react-scroll';
-import { BsMoon, BsSun, BsMoonStars } from 'react-icons/bs';
-import { FaRegMoon } from 'react-icons/fa';
+import { BsSun, BsMoonStars } from 'react-icons/bs';
 
 function Header({ handleClick, darkTheme }) {
   return (
