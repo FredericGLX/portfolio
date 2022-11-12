@@ -5,9 +5,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+// Import projects
 import NetflixProject from '../project/NetflixProject';
 import TMSProject from '../project/TMSProject';
 import PokeApp from '../project/PokeApp';
+import WeatherApp from '../project/WeatherApp';
 
 function Projects({ darkTheme }) {
   // Breakpoints for responsiveness
@@ -50,7 +52,7 @@ function Projects({ darkTheme }) {
             <PokeApp />
           </SwiperSlide>
           <SwiperSlide>
-            <NetflixProject />
+            <WeatherApp />
           </SwiperSlide>
         </Swiper>
       </div>
