@@ -1,4 +1,5 @@
 @import '../App.scss';
+@import '../mixin.scss';
 
 :root {
   --swiper-navigation-color: #211B12;
@@ -8,6 +9,9 @@
   margin: 0 auto 60px auto;
   width: 80%;
 
+  @include respond(large) {
+    width: 90%;
+  }
   h1 {
     color: $mainColor;
   }
@@ -38,6 +42,9 @@
 // Swiper
 .swiper-wrapper {
   margin: 1rem 0;
+  @include respond(small) {
+    margin: 0;
+  }
 }
 
 .swiper-slide {

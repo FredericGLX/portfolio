@@ -1,9 +1,26 @@
 @import '../App.scss';
+@import '../mixin.scss';
+
 
 .about__container {
   text-align: center;
   margin: 0 auto 60px auto;
   width: 40%;
+  @include respond(xlarge) {
+    width: 50%;
+  }
+  @include respond(large) {
+    width: 60%;
+  }
+  @include respond(medium) {
+    width: 70%;
+  }
+  @include respond(small) {
+    width: 90%;
+  }
+  @include respond(xsmall) {
+    width: 95%;
+  }
 }
 
 .about__top {
@@ -43,6 +60,12 @@ font-weight: 700;
       box-shadow: 0 2px 3px #ccc;
     }
   }
+  @include respond(xlarge) {
+    display: block;
+    .about__badge {
+      margin-top: 4px;
+    }
+  }
 }
 
 .contact__icons {
@@ -51,6 +74,9 @@ font-weight: 700;
   margin: 10px 6px 0 0;
   color: #333;
   border-radius: 4px;
+  }
+  @include respond(xlarge) {
+    justify-content: center;
   }
 }
 

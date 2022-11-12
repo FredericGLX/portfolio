@@ -1,8 +1,8 @@
 @import '../App.scss';
+@import '../mixin.scss';
 
 .app__header {
   padding: 24px 0 36px 0;
-
   margin: auto;
   width: 80%;
   display: flex;
@@ -55,5 +55,11 @@
       transform: scaleX(1);
       transform-origin: left;
     }
+  }
+}
+
+.app__header {
+  @include respond(small) {
+    width: 95%;
   }
 }

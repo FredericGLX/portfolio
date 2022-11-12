@@ -1,9 +1,26 @@
+@import '../mixin.scss';
 @import '../App.scss';
 
 .contact__container {
   margin: 0 auto auto auto;
   padding-bottom: 15vh;
   width: 40%;
+  @include respond(xlarge) {
+    width: 50%;
+  }
+  @include respond(large) {
+    width: 60%;
+  }
+  @include respond(medium) {
+    width: 70%;
+  }
+  @include respond(small) {
+    width: 90%;
+  }
+  @include respond(xsmall) {
+    width: 95%;
+  }
+
 
   h2 {
     margin-bottom: -4px;
@@ -75,6 +92,10 @@
   transition: all .2s;
   font-size: 16px;
   font-weight: 500;
+  @include respond(small) {
+    width: 50%;
+    margin: 0 auto;
+  }
 
   &:hover {
     box-shadow: 0px 1px 4px #000;

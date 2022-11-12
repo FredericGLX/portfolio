@@ -23,11 +23,11 @@ function Header({ handleClick, darkTheme }) {
           to="about"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={0}
           duration={500}
           className="header__tab"
         >
-          About me
+          About
         </Link>
         <Link
           to="projects"

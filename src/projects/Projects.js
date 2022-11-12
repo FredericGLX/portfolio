@@ -10,6 +10,20 @@ import TMSProject from '../project/TMSProject';
 import PokeApp from '../project/PokeApp';
 
 function Projects({ darkTheme }) {
+  // Breakpoints for responsiveness
+  const customBreakpoints = {
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+      },
+      700: {
+        slidesPerView: 2,
+      },
+      500: {
+        slidesPerView: 1,
+      },
+    },
+  };
   return (
     <div
       className={`projects__container ${
@@ -21,9 +35,10 @@ function Projects({ darkTheme }) {
       <div className="projects">
         <Swiper
           modules={[Navigation]}
-          spaceBetween={0}
-          slidesPerView={3}
+          // spaceBetween={0}
+          // slidesPerView={2}s
           navigation
+          {...customBreakpoints}
         >
           <SwiperSlide>
             <NetflixProject />
