@@ -13,7 +13,7 @@ function WeatherApp() {
   return (
     <Project
       picture={picture}
-      title={'Ticket Management System'}
+      title={'Weather App'}
       technologies={technologies}
       description={
         'A weather application which renders data based on city input. Weather forecast is rendered daily or hourly as well as different parameters (sunrise, wind status, humidity...). Renders different icons based on weather conditions.'
