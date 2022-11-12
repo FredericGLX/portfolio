@@ -29,9 +29,9 @@ function Timeline({ darkTheme }) {
           <div className="timeline__how-long">1.5 year</div>
         </div>
         <p className="timeline__paragraph">
-          When I'm not at work, I'm either learning or building projects as
-          that's how I learn best. Javascript is my main programming language
-          and its ecosystem my main tools.
+          When I'm not at work, I'm either learning through Udemy courses or
+          building projects as that's how I learn best. Javascript is my main
+          programming language and its libraries my main tools.
         </p>
       </div>
       <div className="timeline__block">
