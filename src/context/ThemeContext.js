@@ -8,10 +8,8 @@ const ThemeProvider = ({ children }) => {
   const handleClick = () => {
     if (!darkTheme) {
       setDarkTheme(true);
-      console.log('Dark theme on');
     } else {
       setDarkTheme(false);
-      console.log('Light theme on');
     }
   };
 
