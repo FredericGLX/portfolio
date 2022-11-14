@@ -116,7 +116,7 @@ function About({ darkTheme }) {
           <button className="about__badge">HTML</button>
           <button className="about__badge">CSS</button>
           <button className="about__badge">JavaScript</button>
-          <button className="about__badge">React</button>
+          <button className="about__badge">React JS</button>
           <button className="about__badge">NodeJS</button>
           <button className="about__badge">MongoDB</button>
           <button className="about__badge">SQL</button>
