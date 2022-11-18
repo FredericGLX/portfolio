@@ -10,6 +10,7 @@ import NetflixProject from '../project/NetflixProject';
 import TMSProject from '../project/TMSProject';
 import PokeApp from '../project/PokeApp';
 import WeatherApp from '../project/WeatherApp';
+import Portfolio from '../project/PortfolioProject';
 
 function Projects({ darkTheme }) {
   // Breakpoints for responsiveness
@@ -35,13 +36,7 @@ function Projects({ darkTheme }) {
     >
       <h1>Latest projects</h1>
       <div className="projects">
-        <Swiper
-          modules={[Navigation]}
-          // spaceBetween={0}
-          // slidesPerView={2}s
-          navigation
-          {...customBreakpoints}
-        >
+        <Swiper modules={[Navigation]} navigation {...customBreakpoints}>
           <SwiperSlide>
             <NetflixProject />
           </SwiperSlide>
@@ -53,6 +48,9 @@ function Projects({ darkTheme }) {
           </SwiperSlide>
           <SwiperSlide>
             <WeatherApp />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Portfolio />
           </SwiperSlide>
         </Swiper>
       </div>
